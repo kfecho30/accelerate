@@ -63,4 +63,12 @@ get_header(); ?>
 	</div>
 </section>
 
+<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+<div id="secondary" class="widget-area" role="complementary">
+	<h4>Recent Tweets</h4>
+	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+	<a href="twitter.com/kelseyfecho" class="read-more-link">Follow Us <span>&rsaquo;</span></a>
+</div>
+<?php endif; ?>
+
 <?php get_footer(); ?>

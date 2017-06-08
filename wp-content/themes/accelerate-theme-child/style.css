@@ -28,18 +28,28 @@
 }
 
 .nav-menu {
-margin:0;
+  text-transform: uppercase;
+
 }
 
-.nav-menu ul li {
-	float:left;
-	margin:0 30px;
-	text-transform:uppercase;
+.nav-menu li {
+  display: inline-block;
+  margin: 0 40px 0 0;
+}
+
+.nav-menu li a{
+  display: inline;
+  font-size: 14px;
+}
+
+.nav-menu li a:hover{
+  font-weight: bold;
 }
 
 /* Featured work on homepage */
 .featured-work {
 	overflow:auto;
+  margin-bottom: 100px;
 }
 
 .featured-work h4 {
@@ -82,18 +92,19 @@ margin:0;
 }
 
 /* blog post on homepage */
+
 .recent-posts {
-    clear: both;
-    margin: 100px 0 0;
+    margin: 20px 0 0 0;
     overflow: hidden;
+    display: inline;
 }
 
 .blog-post {
 	width: 44.75%;
-	padding-right: 50px;
+	padding-right: 0px;
 	float: left;
 }
-.blog-post h4 {
+.blog-post h4, #secondary h4 {
 	font: 16px 'Montserrat';
 	color: #a6a6a6;
 	text-transform: uppercase;
@@ -103,10 +114,35 @@ margin:0;
 	font: 700 24px 'Montserrat';
 	margin: 36px 0;
 }
-.blog-post .read-more-link {
+.read-more-link {
 	font: 700 15px 'Montserrat';
-	color: #45ac9d;
+	color: #45ac9d !important;
 	text-transform: uppercase;
+}
+/* Twitter styles */
+#secondary {
+  width: 44.75%;
+  float: right;
+  display: inline;
+  padding-bottom: 150px;
+}
+
+#secondary .widget-title {
+  font: 700 24px 'Montserrat';
+	margin: 36px 0 0 -40px;
+  color: inherit;
+}
+
+.tweets li{
+  list-style: none;
+  font-style: inherit;
+  font-weight: lighter;
+  font-size: 16px;
+  margin: 30px 0 0 -60px;
+}
+
+.stt-em {
+  color: #fff;
 }
 
 /* Case Studies */
@@ -145,4 +181,178 @@ div.case-study-images {
 div.case-study-images img {
     border: 1px solid #dddddd;
     margin-bottom: 100px;
+}
+
+/*Contact Form*/
+.ninja-submit {
+  float: right;
+  color: #fff;
+  background-color: #45ac9d;
+  padding: 10px 70px 10px 70px;
+  font-family: Montserrat, sans-serif;
+  font-weight: regular;
+  font-size: 14px;
+}
+
+.nf-form-title {
+  display: none;
+}
+.nf-form-fields-required {
+	display: none;
+}
+.nf-field .nf-field-label label {
+    font-weight: normal;
+    font-size: .9em;
+}
+.nf-field-container.textbox-container.label-above,
+.nf-field-container.email-container.label-above {
+    display: block;
+    width: 49%;
+    float: left;
+    clear: none;
+}
+.nf-field-container.email-container.label-above {
+  margin-left: 2%;
+}
+#nf-field-1, #nf-field-2 {
+  height: 40px;
+}
+.contact-page {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*About Page*/
+.about-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll center bottom/ cover rgba(0, 0, 0, 0);
+}
+
+.about-page .brand-name {
+  color: #45ac9d;
+}
+
+.about-page .homepage-hero {
+  font-family: inherit;
+  font-size: 24px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 90px 0px 70px 0px;
+  letter-spacing: .8px;
+}
+
+.about-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.intro {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.intro h5 {
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.intro p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: inherit;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.service-offering h2 {
+  font-weight: 500;
+}
+
+.service-image-left {
+  float: left;
+  width: 20%;
+  display:inline;
+  margin-top: 60px;
+}
+
+.service-text-left {
+  float: left;
+  width: 70%;
+  display:inline;
+  margin-top: 60px;
+}
+
+.service-image-right {
+  float: right;
+  width: 20%;
+  display:inline;
+  margin-top: 60px;
+}
+
+.service-text-right {
+  float: right;
+  width: 70%;
+  display:inline;
+  margin-top: 60px;
+}
+
+.offering {
+  clear: both;
+}
+
+.call-to-action {
+  padding-top: 360px;
+  padding-bottom: 70px;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.call-to-action h3 {
+  float: left;
+  width: 60%;
+  letter-spacing: .4px;
+}
+
+.call-to-action a {
+  float: right;
+  width: 20%;
+  letter-spacing: .4px;
+}
+
+.call-to-action .button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* 404 Page */
+
+.whale {
+  clear: both;
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding: 10px 20px 30px 20px;
+}
+
+#four {
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+}
+
+.error h2 {
+  color: #45ac9d;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: solid #45ac9d .5px;
+  padding-bottom: 10px;
+}
+
+.mc4wp-form-fields .button {
+  background: none repeat scroll 0 0 #45ac9d;
 }
